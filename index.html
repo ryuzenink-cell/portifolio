@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <!-- === Bootstrap Link === -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    
+    <!-- === Bootstrap Icons === -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- === CSS Personalizado === -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style-hero-section.css">
+  </head>
+  <body>
+
+    <!-- === header === -->
+    <header class="px-4 py-3">
+        <nav class="navbar navbar-expand-lg navbar-dark modern-header py-3 rounded-4 sticky-top">
+            <div class="container">
+                <a href="index.html" class="navbar-brand fw-bold"><span class="brand-icon">R</span> RYUZEN</a>
+
+                <button class="navbar-toggler" 
+                type="button" data-bs-toggle="collapse" 
+                data-bs-target="#menu"><span class="navbar-toggler-icon"></span></button>
+
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav mx-auto align-items-lg-center">
+                        <li class="nav-item mx-2"><a href="#" class="nav-link" aria-current="page">Sobre mim</a></li>
+                        <li class="nav-item mx-2"><a href="#" class="nav-link">Projetos</a></li>
+                        <li class="nav-item mx-2"><a href="#" class="nav-link">Trajetória</a></li>
+                        <li class="nav-item mx-2"><a href="#" class="nav-link">Certificações</a></li>
+                    </ul>
+                    <a href="#" class="btn btn-outline-primary px-4 btn-modern"><!--<i class="bi bi-chat-left-dots"></i>-->
+                        CONTATO
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- === hero-section === -->
+    <section class="hero-section" >
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <span class="hero-badge shine-text">
+                        BACKEND • ENGENHARIA DE SOFTWARE • ADMINISTRAÇÃO
+                    </span>
+
+                    <h1 class="hero-title mt-4">
+                        Construindo <span class="accent shine-text">Soluções Backend</span><br>com Visão de<br>
+                        <span class="accent shine-text">Negócio</span>
+                    </h1>
+
+                    <p class="hero-text mt-4">
+                        Sou <strong>Adrian Rollim Santos</strong>, estudante de administração e Engenharia de Software
+                        com foco em <span class="accent">desenvolvimento backend, APIs REST e soluções orientadas a processos</span>.
+                        Unindo tecnologia, análise de dados e visão administrativa.
+                    </p>
+
+                    <div class="d-flex gap-3 mt-4 flex-wrap">
+                        <a href="#" class="social-box"><i class="fa-brands fa-github" style="font-size: 1.5rem;"></i></a>
+                        <a href="#" class="social-box"><i class="fa-brands fa-linkedin" style="font-size: 1.5rem;"></i></a>
+                        <a href="#" class="social-box"><i class="fa-brands fa-discord"  style="font-size: 1.5rem;"></i></a>
+                        <a href="#" class="social-box"><i class="fa-brands fa-x-twitter" style="font-size: 1.5rem;"></i></a>
+                    </div>
+
+                    <div class="d-flex gap-3 mt-4 flex-wrap">
+                        <a href="#" class="btn hero-btn-primary">VER PROJETOS</a>
+                        <a href="#" class="btn hero-btn-secondary">BAIXAR CV</a>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="code-card">
+                        <div class="code-topbar d-flex justify-content-between align-items-center">
+                            <div class="dots d-flex gap-2">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <small>Portfolio.css</small>
+                        </div>
+
+                        <div class="code-body">
+<pre><code >
+01  <span style="color: #001aff;">const</span> developer = {
+02    nome: <span style="color: #7dafff;">'Adrian Rollim Santos'</span>,
+03    cargo: <span style="color: #7dafff;">'Estudante de Engenharia de Software'</span>,
+04    stack: [<span style="color: #7dafff;">'NodeJS', 'Express', 'API Rest'</span>],
+05    bancoDeDados: [<span style="color: #7dafff;">'PostGresSQL', 'MySQL'</span>],
+06    foco: <span style="color: #7dafff;">'Negócios + Técnologia'</span>,
+07  };
+
+08  <span style="color: #001aff;">developer</span>.showcase();</code></pre>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>

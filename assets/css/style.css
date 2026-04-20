@@ -1,0 +1,123 @@
+/* ==== GERAL CONFIG. ==== */
+:root {
+    --bg-main: #050816;
+    --bg-soft: #0b1120;
+    --bg-panel: rgba(12, 18, 35, 0.88);
+
+    --text-main: #f8fafc;
+    --text-soft: #94a3b8;
+
+    --accent: #3b82f6;
+    --accent-strong: #60a5fa;
+    --accent-soft: rgba(59, 130, 246, 0.12);
+
+    --border-soft: rgba(255, 255, 255, 0.08);
+    --shadow-soft: 0 12px 40px rgba(0, 0, 0, 0.28);
+}
+
+body {
+    color: white;
+    background:
+        radial-gradient(
+            circle at top left,
+            rgba(59, 130, 246, 0.10),
+            transparent 30%
+        ),
+
+        radial-gradient(
+            circle at right center,
+            rgba(96, 165, 250, 0.06),
+            transparent 28%
+        ),
+
+        linear-gradient(
+            to bottom,
+            #0b1120 0%,
+            #070b16 45%,
+            #030712 100%
+        );
+}
+
+
+/* ==== HEADER ==== */
+.modern-header {
+    background: rgba(15, 23, 42, 0.85);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* ==== BRAND ICON ==== */
+.brand-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #0d6efd, #6f42c1);
+    color: white;
+    font-weight: bold;
+}
+
+/* ==== LINKS <a> ==== */
+
+.navbar {
+    transition: all 0.3s ease;
+}
+
+.navbar .nav-link {
+    font-size: 0.9rem;
+    position: relative;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+    color: #ffffff;
+    transform: translateY(-1px);
+}
+
+.navbar .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 8px;
+    bottom: 4px;
+    width: 0;
+    height: 2px;
+    background: #0d6efd;
+    transition: width 0.3s ease;
+}
+
+.navbar .nav-link:hover::after,
+.navbar .nav-link.active::after {
+    width: calc(100% - 16px);
+}
+
+.navbar .nav-link.active {
+    color: #fff;
+    font-weight: 600;
+}
+
+/* ==== CTA HEADER ==== */
+.btn-modern {
+    border-radius: 10px;
+    padding: 10px 22px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.btn-modern:hover {
+    transform: translateY(-2px);
+}
+
+/* ==== MENU MOBILE ==== */
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        margin-top: 16px;
+        padding: 16px;
+        border-radius: 16px;
+        background: rgba(255, 255, 255, 0.04);
+    }
+}
+

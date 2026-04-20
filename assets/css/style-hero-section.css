@@ -1,0 +1,204 @@
+:root {
+    --bg-main: #050816;
+    --bg-soft: #0b1120;
+    --bg-panel: rgba(12, 18, 35, 0.88);
+
+    --text-main: #f8fafc;
+    --text-soft: #94a3b8;
+
+    --accent: #3b82f6;
+    --accent-strong: #60a5fa;
+    --accent-soft: rgba(59, 130, 246, 0.12);
+
+    --border-soft: rgba(255, 255, 255, 0.08);
+    --shadow-soft: 0 12px 40px rgba(0, 0, 0, 0.28);
+}
+
+body {
+    background:
+        radial-gradient(
+            circle at top left,
+            rgba(59, 130, 246, 0.10),
+            transparent 30%
+        ),
+
+        radial-gradient(
+            circle at right center,
+            rgba(96, 165, 250, 0.06),
+            transparent 28%
+        ),
+
+        linear-gradient(
+            to bottom,
+            #0b1120 0%,
+            #070b16 45%,
+            #030712 100%
+        );
+}
+
+
+.hero-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 80px 0;
+}
+
+.hero-badge {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 999px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 4px;
+    color: var(--accent-strong);
+    background: var(--accent-soft);
+    border: 1px solid var(--accent-strong);
+}
+
+.hero-title {
+    font-size: 4.5rem;
+    line-height: 0.95;
+    font-weight: 800;
+    letter-spacing: -2px;
+    color: var(--text-main);
+}
+
+.hero-title .accent {
+    color: var(--accent);
+}
+
+.hero-text {
+    max-width: 620px;
+    font-size: 1.25rem;
+    line-height: 1.6;
+    color: var(--text-soft);
+}
+
+.hero-text strong {
+    color: var(--text-main);
+}
+
+.hero-text .accent {
+    color: var(--accent-strong);
+    font-weight: 700;
+}
+
+.social-box {
+    width: 62px;
+    height: 62px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--text-main);
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--border-soft);
+    transition: all 0.3s ease;
+}
+
+.social-box:hover {
+    transform: translateY(-4px);
+    border: 1px solid var(--accent-strong);
+    box-shadow: 0 12px 30px var(--accent);
+}
+
+.hero-btn-primary {
+    padding: 16px 32px;
+    border-radius: 18px;
+    font-weight: 700;
+    border: none;
+    background: linear-gradient(135deg, #0049be, #3074c6);
+    color: white;
+    /*box-shadow: 0 0px 30px #528ed8;*/
+    transition: all 0.3s ease;
+}
+
+.hero-btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 34px var(--accent);
+    color: white;
+}
+
+.hero-btn-secondary {
+    padding: 16px 32px;
+    border-radius: 18px;
+    font-weight: 700;
+    color: var(--text-main);
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--border-soft);
+    transition: all 0.3s ease;
+}
+
+.hero-btn-secondary:hover {
+    color: white;
+    background: rgba(255, 255, 255, 0.06);
+    border-color: rgba(255, 255, 255, 0.12);
+}
+
+.code-card {
+    background: var(--bg-panel);
+    border: 1px solid var(--border-soft);
+    border-radius: 28px;
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+    box-shadow: var(--shadow-soft);
+}
+
+.code-topbar {
+    padding: 18px 22px;
+    background: rgba(255, 255, 255, 0.03);
+    border-bottom: 1px solid var(--border-soft);
+}
+
+.code-topbar small {
+    color: #7d7676;
+}
+
+.dots span {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+    background: #ff5f56;
+}
+
+.dots span:nth-child(2) {
+    background: #ffbd2e;
+}
+
+.dots span:nth-child(3) {
+    background: #27c93f;
+}
+
+.code-body {
+    padding: 30px;
+}
+
+.code-body pre {
+    margin: 0;
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: #f3f3f3;
+    font-family: "Courier New", monospace;
+}
+
+@media (max-width: 991.98px) {
+    .hero-section {
+        min-height: auto;
+        padding: 70px 0;
+    }
+
+    .hero-title {
+        font-size: 3rem;
+    }
+
+    .hero-text {
+        font-size: 1.05rem;
+    }
+
+    .code-body pre {
+        font-size: 0.95rem;
+    }
+}
