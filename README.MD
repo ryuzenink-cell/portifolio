@@ -10,10 +10,10 @@
 
 <br>
 
-[![Portfolio](https://img.shields.io/badge/MEU_PORTFÓLIO-ryuzen.ink-3b82f6?style=for-the-badge&logo=googlechrome&logoColor=white)](https://www.ryuzen.ink)
+[![Portfolio](https://img.shields.io/badge/MEU_PORTFÓLIO-portifolio.ryuzen.ink-3b82f6?style=for-the-badge&logo=googlechrome&logoColor=white)](https://portifolio.ryuzen.ink)
 
 <a href="https://www.ryuzen.ink">
-  <img src="preview-portfolio.png" alt="Portfolio Preview" width="720" style="border-radius:8px;" />
+  <img src="assets/img/preview/website.png" alt="Portfolio Preview" width="720" style="border-radius:8px;" />
 </a>
 
 <br>
